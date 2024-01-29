@@ -1,0 +1,229 @@
+@media (max-width: 479px) {
+
+    .first-section {
+        background-repeat: no-repeat;
+        background-image: url(../images/bg11.png);
+        background-position: center 117px;    
+    }
+    .first-section_img img:nth-child(2) {
+        display: block;
+    }
+    .first-section_img img:nth-child(1) {
+        display: none;
+    }
+    .doctor_item-img {
+        width: 100%;
+        margin-bottom: 0px;
+    }
+    .header_logo-right {
+        width: 143px;
+        height: auto;
+    }
+    header .mob_menu_btn {
+        width: 17px;
+        height: 14px;
+    }
+    header .mob_menu_btn img {
+        width: 100%;
+        height: 100%;
+    }
+    header .close_btn {
+        width: 17px;
+        height: 17px;
+        margin-top: 10px;
+    }
+    header .close_btn img {
+        width: 100%;
+        height: 100%;
+    }
+    header .menu {
+        top: 60px;
+    }
+    .first-section_info {
+        margin-top: 5px;
+    }
+    .first-section_text {
+        font-size: 12px;
+    }
+    .first-section {
+        padding-bottom: 790px;
+        margin-top: 40px;
+    }
+    .wrap {
+        background: none;
+    }
+    .description.bg {
+        background: #fff;
+    }
+    .description.bg .first-section_title {
+        color: #ff6815;
+        margin-bottom: 0px;
+        margin-top: 0;
+        padding-top: 0;
+    }
+    .description_top {
+        font-size: 17px;
+    }
+    .description_bottom-text,
+    .description_bottom-text a {
+        font-size: 17px;
+        margin-bottom: 41px;
+    }
+    .description_bottom-button {
+        font-size: 17px;
+        line-height: 42px;
+    }
+    .description_bottom-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+        margin-top: 23px;
+    }
+    .description {
+        background: #ffebb6;
+        padding-top: 20px;
+        padding-bottom: 18px;
+        margin-bottom: 0px;
+    }
+    .descriptions:before,
+    .descriptions:after {
+        z-index: 1;
+    }
+    .description_images {
+        margin-bottom: 24px;
+        margin-top: 31px;
+        row-gap: 15px;
+    }
+    .description_item-box {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .description_wrap {
+        border-radius: 9px;
+    }
+    .description_wrap ul li {
+        font-size: 16px;
+    }
+    .description_wrap ul {
+        padding-left: 23px;
+        margin-bottom: 15px;
+    }
+    .card {
+        background: #ffebb6;
+        padding-bottom: 20px;
+        margin-top: -1px;
+    }
+    .doctor {
+        padding-bottom: 20px;
+        padding-top: 5px;
+    }
+    .doctor .cont {
+        padding: 0;
+    }
+    .doctor_item {
+        padding: 24px;
+        border-radius: 0;
+        margin-bottom: 5px;
+    }
+    .descriptions:after {
+        display: none;
+    }
+    .doctor_item-post {
+        font-size: 28px;
+        line-height: 1.2;
+    }
+    .card_item-title {
+        font-size: 32px;
+    }
+    .doctor_item-name {
+        font-size: 26px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+    .doctor_item-link {
+        font-size: 19px;
+        border-radius: 9px;
+        padding: 13px 10px;
+    }
+    .footnote_text {
+        font-size: 36px;
+    }
+    .footer_text {
+        font-size: 11px;
+    }
+    .description_bottom-title {
+        margin-top: 0;
+    }
+    .description_images img {
+        border-radius: 20px;
+    }
+    .description_title {
+        font-size: 20px;
+    }
+    .description_text {
+        font-size: 16px;
+    }
+    .first-section_title {
+        font-size: 24px;
+    }
+
+    .orthopedist .description_top-title {
+        font-size: 19px;
+        margin-bottom: 17px;
+        margin-top: 17px;
+    }
+    .orthopedist .first-section_left-img {
+        width: 249px;
+        height: auto;
+    }
+    .orthopedist .first-section_left-title {
+        font-size: 27px;
+    }
+    .first-section_left {
+        margin-right: 0px;
+        margin-top: 0px;
+    }
+    .orthopedist .first-section_right {
+        width: 226px;
+        height: 226px;
+    }
+    .orthopedist .description_bottom-img {
+        width: 100%;
+        height: auto;
+    }
+    .orthopedist:before {
+        background-size: contain;
+    }
+    .orthopedist:before {
+        top: 267px;
+    }
+    .orthopedist.endocrinologist .description_bottom-img {
+        width: 100%;
+        height: auto;
+    }
+    .orthopedist .footnote {
+        padding-top: 30px;
+    }
+    footer {
+        padding-bottom: 30px;
+    }
+    .orthopedist.psychologist .description_bottom-img {
+        width: 100%;
+        height: auto;
+    }
+    .orthopedist .doctor_item-img {
+        margin-bottom: 10px;
+    }
+    .description_wrap ul.mt40 {
+        margin-top: 15px;
+    }
+    .orthopedist .description_images {
+        margin-top: 20px;
+    }
+
+
+    
+    
+
+
+
+}

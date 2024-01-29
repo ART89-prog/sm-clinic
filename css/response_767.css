@@ -1,0 +1,217 @@
+@media print, (max-width: 767px) {
+
+
+    .description.why {
+        margin-left: -20px;
+        margin-right: -20px;
+        background: #fff;
+    }
+    .description.why .description_wrap {
+        border-radius: 0;
+    }
+    header nav.menu > .item > a {
+        padding: 30px 20px;
+        font-size: 26px;
+    }
+    .header_logo-right {
+        width: 200px;
+        height: auto;
+    }
+    .header_logo-right img {
+        width: 100%;
+    }
+    .menu_open header .close_btn {
+        top: 0;
+    }
+    header .menu {
+        top: 70px;
+    }
+    .doctor_item-img {
+        width: 415px;
+    }
+    .first-section_title {
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .description_images img:nth-child(1),
+    .description_images img:nth-child(2) {
+        width: 100%;
+        border-radius: 20px;
+    }
+    .description_wrap {
+        padding: 20px;
+    }
+    .description_title {
+        margin-bottom: 18px;
+        text-align: start;
+        font-size: 36px;
+    }
+    .description_item {
+        margin-bottom: 34px;
+    }
+    .header_logo-left2 {
+        padding: 140px 0 0 20px;
+    }
+    .header_logo-left2 img {
+        width: 60%;
+    }
+    .footnote_text {
+        font-size: 48px;
+    }
+    .doctor_item-link {
+        font-size: 28px;
+    }
+    .doctor_item-name {
+        font-size: 40px;
+    }
+    .doctor_item-post {
+        font-size: 42px;
+        line-height: 1.2;
+    }
+    .first-section_text {
+        font-size: 16px;
+    }
+    .description_images {
+        row-gap: 30px;
+    }
+
+    .orthopedist .first-section_box {
+        flex-direction: column;
+    }
+    .orthopedist .first-section_right {
+        width: 400px;
+        height: 400px;
+        margin: 20px auto 0;
+    }
+    .orthopedist .first-section_right img:nth-child(2) {
+        display: block;
+    }
+    .orthopedist .first-section_right img:nth-child(1) {
+        display: none;
+    }
+    .orthopedist .orthopedist .first-section_left-img {
+        width: 400px;
+        height: 148px;
+    }
+    .orthopedist .first-section_left:before {
+        position: absolute;
+        content: "";
+        background: url(../images/time.png);
+        width: 78px;
+        height: 78px;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 0;
+    }
+    .orthopedist .description_top-title img {
+        display: none;
+    }
+    .orthopedist .description_top-title {
+        padding: 13px 20px;
+        margin-left: -20px;
+        margin-right: -20px;
+    }
+    .description_top-title.yellow {
+        background: #fff5da;
+    }
+    .description_top-title.green {
+        background: #d3f8dc;
+    }
+    .description_top-title.red {
+        background: #ffe8db;
+    }
+
+    .orthopedist .description_images img {
+        border-radius: 20px;
+    }
+    .orthopedist.psychologist .description_bottom-img {
+        width: 374px;
+        height: 294px;
+    }
+    .orthopedist .doctor_item {
+        padding: 30px 20px;
+    }
+    .orthopedist .description.why {
+        margin-left: -20px;
+        margin-right: -20px;
+        background: #fff;
+    }
+    .orthopedist .description.why .description_wrap {
+        border-radius: 0;
+    }
+    .orthopedist .description_images img:nth-child(2) {
+        width: 100%;
+    }
+    .orthopedist .description_images img:nth-child(3) {
+        width: 100%;
+    }
+    .orthopedist .doctor_item:nth-child(1) .doctor_item-post {
+        color: #e65200;
+    }
+    .orthopedist .doctor_item:nth-child(1) .doctor_item-link {
+        background: #ff7e37;
+    }
+    .orthopedist .doctor {
+        padding-bottom: 40px;
+    }
+
+    .orthopedist.endocrinologist .doctor_item:nth-child(1) .doctor_item-post {
+        color: #7a440f;
+    }
+    .orthopedist.endocrinologist .doctor_item:nth-child(1) .doctor_item-link {
+        background: #2eb051;
+    }
+
+    .orthopedist.psychologist .doctor_item:nth-child(1) .doctor_item-post {
+        color: #04a932;
+    }
+    .orthopedist.psychologist .doctor_item:nth-child(1) .doctor_item-link {
+        background: #ff7e37;
+    }
+
+    .orthopedist .description_images.w50 img:nth-child(1) {
+        width: 100%;
+    }
+    .orthopedist .description_images.w50 img:nth-child(2) {
+        width: 100%;
+    }
+    .orthopedist:before {
+        background: url(../images/bg8.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        top: 450px;
+    }
+    .orthopedist .first-section {
+        margin-bottom: 25px;
+    }
+
+
+
+  
+}
+
+
+
+@media print, (max-width: 580px) {
+
+    .card_item {
+        width: 100%;
+    }
+    .orthopedist .card_item {
+        width: 100%;
+        margin-left: 0;
+        border-radius: 20px;
+    }
+    .card_item-img {
+        border-radius: 20px;
+    }
+    .orthopedist .card_items {
+        margin-left: 0;
+        flex-direction: column;
+    }
+    .orthopedist .card_item + .card_item {
+        margin-top: 25px;
+    }
+
+
+}

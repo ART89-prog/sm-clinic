@@ -1,0 +1,1021 @@
+/* For old browsers */
+@supports (not(--css: variables)) {
+    .supports_error {
+        display: flex !important;
+    }
+}
+
+/* For IE */
+@media screen and (-ms-high-contrast: active),
+(-ms-high-contrast: none) {
+    .supports_error {
+        display: flex !important;
+    }
+}
+
+
+
+
+@font-face {
+    font-family: 'Futura';
+    src: url('F../fonts/uturaPT-Book.eot');
+    src: local('Futura PT Book'), local('FuturaPT-Book'),
+        url('../fonts/FuturaPT-Book.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-Book.woff') format('woff'),
+        url('../fonts/FuturaPT-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/FuturaPT-BookObl.eot');
+    src: local('Futura PT Book Oblique'), local('FuturaPT-BookObl'),
+        url('../fonts/FuturaPT-BookObl.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-BookObl.woff2') format('woff2'),
+        url('../fonts/FuturaPT-BookObl.woff') format('woff'),
+        url('../fonts/FuturaPT-BookObl.ttf') format('truetype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/FuturaPT-Demi.eot');
+    src: local('Futura PT Demi'), local('FuturaPT-Demi'),
+        url('../fonts/FuturaPT-Demi.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-Demi.woff2') format('woff2'),
+        url('../fonts/FuturaPT-Demi.woff') format('woff'),
+        url('../fonts/FuturaPT-Demi.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/FuturaPT-Medium.eot');
+    src: local('Futura PT Medium'), local('FuturaPT-Medium'),
+        url('../fonts/FuturaPT-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-Medium.woff') format('woff'),
+        url('../fonts/FuturaPT-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Futura';
+    src: url('../fonts/FuturaPT-Bold.eot');
+    src: local('Futura PT Bold'), local('FuturaPT-Bold'),
+        url('../fonts/FuturaPT-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/FuturaPT-Bold.woff') format('woff'),
+        url('../fonts/FuturaPT-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+
+@font-face {
+    font-family: 'FreeSet';
+    src: url('../fonts/FreeSetBoldC.eot');
+    src: local('FreeSetBoldC'),
+        url('../fonts/FreeSetBoldC.woff2') format('woff2'),
+        url('../fonts/FreeSetBoldC.woff') format('woff'),
+        url('../fonts/FreeSetBoldC.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: local('OpenSans-CondLight'),
+        url('../fonts/OpenSans-CondLight.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+
+
+/*------------------
+    Reset styles
+------------------*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    margin: 0;
+
+    -webkit-tap-highlight-color: transparent;
+    -webkit-overflow-scrolling: touch;
+    text-rendering: optimizeLegibility;
+    text-decoration-skip: objects;
+}
+
+img {
+    border-style: none;
+}
+
+textarea {
+    overflow: auto;
+}
+
+input,
+textarea,
+input:active,
+textarea:active,
+button {
+    margin: 0;
+
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    outline: none transparent !important;
+    box-shadow: none;
+
+    -webkit-appearance: none;
+    appearance: none;
+    -moz-outline: none !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    margin: 0;
+
+    -webkit-appearance: none;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+:focus {
+    outline: 0;
+}
+
+:hover,
+:active {
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -webkit-touch-callout: none;
+}
+
+
+::-ms-clear {
+    display: none;
+}
+
+
+
+/*-------------------
+    Global styles
+-------------------*/
+:root {
+    --scroll_width: 17px;
+    --text_color: #000;
+    --font_size: 26px;
+    --font_size_title: 32px;
+    --font-family: 'Futura';
+}
+
+
+::selection {
+    color: #fff;
+    background: #8FDBB7;
+}
+
+::-moz-selection {
+    color: #fff;
+    background: #8FDBB7;
+}
+
+
+.clear {
+    clear: both;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+html {
+    height: 100%;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height: fill-available;
+}
+
+
+body {
+    height: 100%;
+    min-height: -moz-available;
+    min-height: -webkit-fill-available;
+    min-height: fill-available;
+    font-family: var(--font-family);
+    font-weight: 400;
+}
+
+
+button {
+    color: inherit;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    line-height: inherit;
+    display: inline-block;
+    cursor: pointer;
+    vertical-align: top;
+    border: none;
+    background: none;
+}
+
+.wrap {
+    position: relative;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    min-width: 375px;
+    min-height: 100%;
+    background: #ffebb6;
+}
+
+
+.main {
+    flex: 1 0 auto;
+}
+
+
+.cont {
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+    padding: 0 20px;
+    position: relative;
+}
+
+.lozad {
+    transition: opacity .5s linear;
+
+    opacity: 0;
+}
+
+.lozad.loaded {
+    opacity: 1;
+}
+
+
+.row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    flex-wrap: wrap;
+}
+
+
+
+.overlay {
+    position: fixed;
+    z-index: 100;
+    top: 111px;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    opacity: .65;
+    background: #000;
+}
+
+
+
+header {
+    background: #fff;    
+}
+header .cont {
+    max-width: 1040px;
+}
+.header_top {
+    padding-top: 45px;
+    padding-bottom: 36px;
+}
+.header_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+header nav.menu > .item {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+header nav.menu > .item > a {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    font-size: 20px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-right: 25px;
+    transition: all .3s;
+    text-transform: uppercase;
+    padding: 15px 28px;
+}
+header nav.menu > .item:last-child > a {
+    margin-right: 0px;
+}
+header nav.menu > .item > a:hover {  
+    background: #119165;
+}
+header nav.menu > .item > a.active {
+    background: #119165;
+}
+.header_bottom {   
+    background: #21ac7c;
+}
+
+body.menu_open {
+    overflow: hidden;
+}
+header .mob_menu_btn {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    z-index: 8;
+}
+header .close_btn {
+    display: none;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    z-index: 103;
+}
+header .close_btn img {
+    display: block;
+    margin: 0 auto;
+}
+.header_logo-left2 {
+    display: none;
+}
+
+
+
+
+.first-section {
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-image: url(../images/first-section-bg.png);
+    padding-bottom: 780px;
+    position: relative;
+}
+.first-section_img img:nth-child(2) {
+    display: none;
+}
+.first-section .cont {
+    max-width: 1040px;
+}
+.first-section_info {
+    max-width: 830px;
+    width: 100%;
+    margin-left: 83px;
+}
+.first-section_text {
+    font-family: "Roboto";
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #ffffff;
+}
+.first-section_title {
+    font-family: 'Futura';
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-top: 20px;
+    margin-left: 182px;
+    margin-bottom: 30px;
+}
+
+
+
+.descriptions {
+    margin-top: -750px;
+    position: relative;
+}
+.descriptions:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg2.png);
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.descriptions:after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg3.png);
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+.description {
+    margin-bottom: 68px;
+    position: relative;
+}
+.description_wrap {
+    padding: 78px 102px 53px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    position: relative;
+    z-index: 55;
+}
+.description_top {
+    font-family: 'Futura';
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 36px;
+}
+.description_bottom {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.description_bottom-info {
+    margin-left: 71px;
+    width: calc(100% - 518px);
+}
+.description_bottom-title {
+    font-family: 'Futura';
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 24px;
+    margin-top: 23px;
+}
+.description_bottom-text {
+    font-family: 'Futura';
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 47px;
+}
+.description_bottom-text a {
+    font-family: 'Futura';
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #000000;
+    text-decoration: none;   
+}
+a.green {
+    color: #20ab7b;    
+    text-decoration: none;  
+}
+a.red {
+    color: #ff5800;  
+    text-decoration: none;   
+}
+a.yellow {
+    color: #ff6317;
+    text-decoration: none;   
+}
+.description_bottom-button {
+    padding: 6px;
+    font-family: 'Futura';
+    font-size: 28px;
+    line-height: 61px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: #ffffff;
+    background-color: #ff9154;
+    border-radius: 100px;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+}
+.description_bottom-img {
+    width: 446px;
+    height: 406px;
+}
+.description_bottom-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.description_item {
+    margin-bottom: 77px;
+}
+.description_item:last-child {
+    margin-bottom: 0px;
+}
+.description_title {
+    text-align: center;
+    font-family: 'Futura';
+    font-size: 50px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #20ab7b;
+    margin-bottom: 48px;
+}
+.description_text {
+    font-family: 'Futura';
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #000000;
+}
+.description_text p + p {
+    margin-top: 25px;
+}
+.description_images {
+    margin-bottom: 66px;
+    margin-top: 74px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    column-gap: 28px;
+    row-gap: 65px;
+}
+.description_images img {
+    border-radius: 50px;
+}
+.description_images img:nth-child(1) {
+    width: calc(50% - 14px);
+}
+.description_images img:nth-child(2) {
+    width: calc(50% - 14px);
+}
+.description_images img:nth-child(3) {
+    width: 100%;
+}
+.description_wrap ul {
+    padding-left: 30px;
+    margin-bottom: 42px;
+}
+.description_wrap ul li {
+    font-family: 'Futura';
+    font-size: 26px;
+    line-height: 1.2;
+    font-weight: 500;
+    color: #000000;
+}
+
+
+.card {
+    padding-bottom: 106px;
+    position: relative;
+    z-index: 2;
+}
+.card_items {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-left: -42px;
+}
+.card_item {
+    text-decoration: none;
+    margin-left: 42px;
+    width: calc(100%/3 - 42px);
+    height: 582px;
+    border-radius: 20px;
+    padding: 400px 24px 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    position: relative;
+}
+.card_item-info {
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% - 40px);
+}
+
+.card_item-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 20px;
+}
+.card_item-title {
+    font-family: 'Futura';
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    margin-bottom: 25px;
+    text-align: center;
+}
+.card_item-title.tas {
+    text-align: start;
+} 
+.card_item-button {
+    display: block;
+    text-decoration: none;
+    font-family: 'Futura';
+    font-size: 26px;
+    line-height: normal;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-align: center;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    width: 100%;
+    padding: 11px 5px;
+}
+.card_item-img img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+
+.doctor {
+    padding-bottom: 84px;
+    padding-top: 116px;
+    background: #fff;
+    position: relative;
+    z-index: 55;
+}
+.doctor_item {
+    display: flex;    
+    border-radius: 30px;
+    padding: 38px 85px 0 0;
+    margin-bottom: 103px;
+    align-items: end;
+}
+.doctor_item:last-child {
+    margin-bottom: 0;
+}
+.doctor_item-img {
+    margin-left: -65px;
+    margin-bottom: 55px;
+    width: 586px;
+    height: 438px;
+}
+.doctor_item-img img {
+    width: 100%;
+    object-fit: cover;
+}
+.doctor_item-info {
+    margin-left: 57px;
+    width: calc(100% - 578px);
+}
+.doctor_item-post {
+    font-family: 'Futura';
+    font-size: 52px;
+    line-height: 59px;
+    font-weight: 700;
+    text-transform: uppercase;    
+    margin-bottom: 42px;
+    margin-top: 32px;
+}
+.doctor_item-name {
+    font-family: 'Futura';
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 700;
+    color: #000000;
+    margin-bottom: 84px;
+    display: block;
+    text-decoration: none;
+}
+.doctor_item-link {
+    font-family: 'Futura';
+    font-size: 32px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-decoration: none;    
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: block;
+    padding: 28px 21px;
+    text-align: center;
+    width: 100%;
+}
+.doctor_item:nth-child(1) .doctor_item-post {
+    color: #04a932;
+}
+.doctor_item:nth-child(2) .doctor_item-post {
+    color: #7a440f;
+}
+.doctor_item:nth-child(3) .doctor_item-post {
+    color: #e65200;
+}
+.doctor_item:nth-child(1) {
+    background: #d3f8dc;
+}
+.doctor_item:nth-child(2) {
+    background: #ffedc0;
+}
+.doctor_item:nth-child(3) {
+    background: #ffdfcc;
+}
+.doctor_item:nth-child(1) .doctor_item-link {
+    background: #ff7e37;
+}
+.doctor_item:nth-child(2) .doctor_item-link {
+    background: #2eb051;
+}
+.doctor_item:nth-child(3) .doctor_item-link {
+    background: #ff7e37;
+}
+
+
+.footnote {
+    background: #fff;
+    padding-bottom: 20px;
+    position: relative;
+    z-index: 55;
+}
+.footnote_text {
+    font-family: 'Open Sans';
+    font-size: 71px;
+    line-height: 1;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #c0c0c0;
+    letter-spacing: 0.015em;
+}
+
+
+footer {
+    background: #fff;
+    padding-bottom: 111px;
+    position: relative;
+    z-index: 55;
+}
+.footer_text {
+    font-family: "Roboto";
+    font-size: 16px;
+    line-height: 1.2;
+    font-weight: 400;
+    color: #c0c0c0;
+}
+.description_images.mb0 {
+    margin-bottom: 0;
+}
+
+
+
+
+.first-section_box {
+    display: flex;
+}
+.first-section_left {
+    margin-right: 28px;
+    margin-top: 20px;
+    position: relative;
+}
+.orthopedist .first-section {
+    margin-top: 24px;
+    position: relative;
+    background: none;
+    padding-bottom: 0;
+    z-index: 2;
+}
+.orthopedist {
+    position: relative;
+}
+.orthopedist:before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg5.png);
+    top: 430px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-repeat: no-repeat;
+    z-index: 1;
+}
+.first-section_left-title {
+    font-family: 'Futura';
+    font-size: 48px;
+    line-height: 1;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;   
+    margin-top: 43px;
+}
+.orthopedist .first-section_info {
+    margin-left: 0;
+}
+.wrap.orthopedist {
+    background: #fff;    
+}
+.orthopedist .descriptions {
+    margin-top: 0;
+}
+.orthopedist .first-section_wrap {
+    margin-bottom: 23px;
+}
+.orthopedist .descriptions {
+    background: #ffebb6;    
+}
+.orthopedist .descriptions:after {
+    display: none;
+}
+.orthopedist .descriptions:before {
+    top: 37%;
+}
+.orthopedist .card_item {
+    width: calc(100%/2 - 46px);
+    height: 575px;
+}
+.orthopedist .card_item-title {
+    text-align: center;
+}
+.orthopedist .footnote {
+    padding-top: 72px;
+}
+.orthopedist .description_bottom-img {
+    width: 501px;
+    height: 394px;
+}
+.orthopedist .description_bottom-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.orthopedist .description_bottom-info {
+    margin-left: 0;
+    margin-right: 25px;
+    width: calc(100% - 535px);
+}
+.orthopedist .description_top-title {
+    font-family: 'Futura';
+    font-size: 30px;
+    line-height: 1.2;
+    font-weight: 700;
+    color: #000000; 
+    margin-bottom: 32px;
+    margin-top: 38px;
+    display: flex;
+    align-items: center;
+}
+.orthopedist .description_top-title img {
+    width: 67px;
+    height: 67px;
+    margin-right: 24px;
+    display: block;   
+}
+.orthopedist .description_images.w100 img {
+    width: 100%;
+    height: auto;
+}
+.orthopedist .description_images img:nth-child(1) {
+    width: 100%;
+}
+.orthopedist .description_images img:nth-child(2) {
+    width: calc(50% - 16px);
+}
+.orthopedist .description_images img:nth-child(3) {
+    width: calc(50% - 16px);
+}
+.orthopedist .description_images {
+    margin-top: 50px;
+    column-gap: 32px;
+    row-gap: 32px;
+    margin-bottom: 0;
+}
+.orthopedist .doctor {
+    background-color: #ffebb6;
+    padding-top: 0;
+}
+.orthopedist .first-section_left-img {
+    width: 469px;
+    height: 180px;
+}
+.orthopedist .first-section_left-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.orthopedist .first-section_right {
+    width: 503px;
+    height: 430px;
+}
+.orthopedist .first-section_right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.orthopedist .first-section_right img:nth-child(2) {
+    display: none;
+}
+.orthopedist .doctor_item:nth-child(1) {
+    background: #fff;
+}
+.orthopedist .description_images.w50 img:nth-child(1) {
+    width: calc(50% - 16px);
+}
+.orthopedist .description_images.w50 img:nth-child(2) {
+    width: calc(50% - 16px);
+}
+.orthopedist.endocrinologist .description_bottom-img {
+    width: 584px;
+    height: 392px;
+    flex-shrink: 0;
+}
+.orthopedist.endocrinologist .description_bottom-info {
+    margin-left: 0;
+    margin-right: 44px;
+    width: calc(100% - 628px);
+}
+.orthopedist .card_item-title.tas {
+    text-align: start;
+}
+.orthopedist .card_item-button {
+    max-width: 324px;
+    margin: 0 auto;
+}
+.orthopedist .description_title {
+    text-transform: uppercase;
+}
+.orthopedist.psychologist .description_bottom-img {
+    width: 496px;
+    height: 391px;
+}
+.orthopedist.psychologist .description_bottom-info {
+    margin-left: 0;
+    margin-right: 44px;
+    width: calc(100% - 540px);
+}
+.description_wrap ul.mb0 {
+    margin-bottom: 0;
+}
+.description_wrap ul.mt40 {
+    margin-top: 40px;
+}
+.orthopedist .description_top {
+    margin-bottom: 0;
+}
+.orthopedist .card_item-title br {
+    display: none;
+}
